@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AETHER CLASH</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="hud">
+    <canvas id="minimap"></canvas>
+    <div id="topbar">
+      <div id="score-ally">0</div>
+      <div id="timer">05:00</div>
+      <div id="score-enemy">0</div>
+    </div>
+    <div id="feed"></div>
+    <div id="center">
+      <div id="crosshair"><span></span><span></span><span></span><span></span></div>
+      <div id="hitmarker"></div>
+    </div>
+    <div id="bottom">
+      <div id="hp-wrap"><div id="hp-label">VITALITÉ</div><div id="hp-bar"><div id="hp-fill"></div></div></div>
+      <div id="abilities">
+        <div class="ability" id="ab1"><div class="key">C</div><div class="icon" data-icon="slash"></div><div class="cd"></div></div>
+        <div class="ability" id="ab2"><div class="key">E</div><div class="icon" data-icon="burst"></div><div class="cd"></div></div>
+      </div>
+      <div id="class-tag">GUERRIER ★</div>
+    </div>
+    <div id="charge-wrap"><div id="charge-bar"><div id="charge-fill"></div></div><div id="charge-label">CHARGEMENT</div></div>
+    <div id="announce"></div>
+  </div>
+  <div id="menu">
+    <h1>AETHER<span>CLASH</span></h1>
+    <p class="sub">PVP TACTIQUE — PROTOTYPE BÊTA</p>
+    <div class="classes">
+      <button class="pick" data-class="WARRIOR"><h3>GUERRIER</h3><p>Épée d'énergie — équilibré</p></button>
+      <button class="pick" data-class="TANK"><h3>TANK</h3><p>Grand bouclier + masse — défense</p></button>
+      <button class="pick" data-class="ASSASSIN"><h3>ASSASSIN</h3><p>Dagues arcaniques — agilité</p></button>
+    </div>
+    <p class="hint">ZQSD — déplacement · Souris — vue · Clic — attaque (maintenir : chargée) · A / E — capacités · Espace — saut · Maj — sprint</p>
+  </div>
+  <div id="death">
+    <h2>ÂME LIBÉRÉE</h2>
+    <p id="death-info"></p>
+    <p class="hint">Une âme cristallisée attend sur le champ de bataille…</p>
+  </div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
